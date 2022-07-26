@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
+Route::get('/post/article', 'PostController@article')->name('post.article');
+Route::post('/post/post-comment/', 'PostController@postComment')->name('post.post-comment');
+Route::get('/post/comment/{id}', 'PostController@comment')->name('post.comment');
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/comment', 'CommentController');
+
 Route::resource('/post' , 'PostController');
-Route::get('/post/comment/{id}', 'PostController@comment')->name('post.comment');
-Route::post('/post/post-comment/', 'PostController@postComment')->name('post.post-comment');
-Route::get('/post/article', 'PostController@article')->name('post.article');
+Route::resource('/comment', 'CommentController');

@@ -66,7 +66,7 @@
                     <h2 class="font-weight-normal"> Postingan Terbaru </h2>
                 </div>
 
-                <div class="">
+                <div class="" style="box-shadow: 5px 5px #888888">
                     <div class="card">
                         @foreach ($posts as $post)
                             <div class="card-body mt-3 pt-3" style="box-shadow: 5px 10px #888888">
