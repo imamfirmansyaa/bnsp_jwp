@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Profile;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
@@ -12,9 +14,10 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('profile.index');
+        $users = User::orderBy('id','DESC')->paginate(5);
+        return view('profile.index',compact('users'));
     }
 
     /**
