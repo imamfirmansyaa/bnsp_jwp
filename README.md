@@ -1,1 +1,2 @@
-Link Figma = https://www.figma.com/file/WwOwAdTnRAbZlAZvewMwyp/JWP?node-id=2%3A329
+Mockup by figma 
+"https://www.figma.com/file/ojjIfDLsH1R5cC1evPYUrN/Untitled"
