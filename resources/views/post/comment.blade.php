@@ -21,20 +21,19 @@
     <div class="row justify-content-center">
         <div class="col-md-12 pb-3">
             <div class="card">
-                <div class="card-body" style="background: #D9D9D9">
+                <div class="card-body">
                     {{$post->user->name}}
                     <span class="float-right"> {{ date('d-M-Y', strtotime($post->created_at)) }}</span>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group pt-2">
                         <li class="list-group-item">{{ $post->content }}</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-
-        <div class="col-md-12 pl-5">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Komentar Anda</div>
+                <div class="card-header">Komentari Postingan</div>
 
                 <div class="card-body">
 
