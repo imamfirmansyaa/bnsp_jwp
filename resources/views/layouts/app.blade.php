@@ -32,7 +32,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="{{ route('post.index') }}" class="nav-link">Postingan</a>
+                            <a href="{{ route('post.article') }}" class="nav-link">Postingan</a>
                         </li>
                     </ul>
 

@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('post.summary');
+        //
     }
 
     /**
@@ -48,7 +48,6 @@ class PostController extends Controller
             return redirect()->route('post.article')->withErrors($validator)->withInput();
         }
 
-        //menyimpan data konten berdasarkan user_id
         DB::beginTransaction();
         $saved = true;
 
@@ -56,7 +55,7 @@ class PostController extends Controller
         $post->content = $request->content;
         $post->user_id = Auth::user()->id;
         $saved = $saved && $post->save();
-        // dd($saved);
+
         /**
          * Save Tags from post
          */
@@ -78,7 +77,6 @@ class PostController extends Controller
             }
         }
 
-        //validasi ketika data tersimpan dan tidak tersimpan
         if($saved) {
             DB::commit();
             return redirect()->route('post.article')->with("success", "Postingan Telah Ditambahkan");

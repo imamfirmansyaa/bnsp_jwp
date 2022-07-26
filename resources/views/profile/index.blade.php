@@ -88,29 +88,23 @@
                                 <img src="logo.png" class="imgprofile">
                             </div>
                             <table class="mx-4 my-4">
-                                {{-- @foreach ($users as $key => $user) --}}
-                                    <tr>
-                                        <td>Nama</td>
-                                        <td>:</td>
-                                        <td> ... </td>
-                                        {{-- <td>{{ $user->name }}</td> --}}
-                                    </tr>
-                                    <tr>
-                                        <td>Email</td>
-                                        <td>:</td>
-                                        <td> ... </td>
-                                        {{-- <td>{{ $user->email }}</td> --}}
-                                    </tr>
-                                    <tr>
-                                        <td>Password</td>
-                                        <td>:</td>
-                                        <td> ... </td>
-                                        {{-- <td>{{ $user->password }}</td> --}}
-                                    </tr>
-                                {{-- @endforeach --}}
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td>Imam Firmansyah</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>:</td>
+                                    <td>imamsyaa001@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>:</td>
+                                    <td>**********</td>
+                                </tr>
                             </table>
-                            <input type="submit" value="Simpan" class="btn btn-success mb-3 mx-3"
-                                style="text-align: center">
+                            <input type="submit" value="Simpan" class="btn btn-success mb-3 mx-3" style="text-align: center">
                         </div>
                     </div>
                 </div>
